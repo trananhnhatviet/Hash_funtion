@@ -16,13 +16,13 @@ Thuật toán MD5 như sau:
     D – 76543210
 ```
 -    Process Each 512-bit Block
-    ![](https://hackmd.io/_uploads/H143cuB82.png)
+![image](https://github.com/trananhnhatviet/Hash_funtion/assets/92376163/41388474-88ba-4a43-85df-80aa6936be13)
     -    Sau khi padding input M, ta sẽ chia ra thành 4 round, mỗi round 128 bits. Mỗi round sẽ xử lý 4 buffer.
     -    Giờ mình sẽ nói về round 1, các round khác cũng sẽ tương tự như thế.
-    ![](https://hackmd.io/_uploads/BkmhmtSU2.png)
+    ![image](https://github.com/trananhnhatviet/Hash_funtion/assets/92376163/fe31d298-0f8f-4c47-b39b-f05c4852aabd)
         -    Ta sẽ lấy 3 buffer B, C, D vào 1 hàm F, sau đó sẽ cộng module với A, sau đó cộng modulo tiếp với M[i] (i:1->16), và cộng tiếp với các hằng số MD5 K[i] (i:1->16), sau đó sẽ dịch trái s bit(s là mấy bit thì mình cũng không biết, wiki cũng không nói. Sau đó cộng modulo với B và sẽ trả về buffer B, ``D --> A``, ``B --> C``, ``C --> D``
         -    Các round sau thì cũng như thế, nhưng mà chỉ thay đổi hàm F thành các hàm G, H, I. Cụ thể như sau:
-        -    ![](https://hackmd.io/_uploads/rkDNpYr8n.png)
+        -    ![image](https://github.com/trananhnhatviet/Hash_funtion/assets/92376163/2b659989-b87c-4857-bc1a-4964ba9ee16f)
 -    Bạn có thể tham khảo qua ví dụ [ở đây](https://www.comparitech.com/blog/information-security/md5-algorithm-with-examples/)
 
 ### SHA-1
@@ -32,13 +32,13 @@ Thuật toán SHA-1 như sau:
 -    Padding bits:
     -    Tương tự như là MD5, nhưng mà 64 bits cuối lại theo định dạng big-endian nên là vẫn sẽ có khác với MD5
 -    Initialize MD buffer
-    -    ![](https://hackmd.io/_uploads/B1WcTTHLn.png)
+    -    ![image](https://github.com/trananhnhatviet/Hash_funtion/assets/92376163/5e647600-668f-49ed-b288-f89d88fc1f12)
     -    SHA-1 có 5 buffer, output là 160 bits, nên là mỗi buffer 32 bits
 
 -    Quá trình băm:
-    -    ![](https://hackmd.io/_uploads/SJsVaTHL2.png)
+    -    ![image](https://github.com/trananhnhatviet/Hash_funtion/assets/92376163/179c9b2f-d316-4554-9df0-f59b7b170ac7)
     -    SHA-1 có tổng cộng 80 round, mỗi round sẽ xử lý các bit khác nhau, ta sẽ lấy ví dụ round đầu tiên
-    ![](https://hackmd.io/_uploads/SJDuxRBI2.png)
+    ![image](https://github.com/trananhnhatviet/Hash_funtion/assets/92376163/5b39c5ec-67fd-43fe-bdab-29b0edc1e8d9)
     -    Thêm 79 vòng như thế nữa nhưng mà hàm khác, ta sẽ được output 160 bits
 -    Bạn có thể tham khảo thêm [tại đây](https://www.slideshare.net/shivaramdam/sha-1-algorithm)
 
@@ -47,7 +47,7 @@ Thuật toán SHA-1 như sau:
 SHA-256 (Secure Hash Algorithm 256-bit) là một thuật toán băm mã hóa đối xử với các khối dữ liệu có kích thước 512 bit. Nó là một trong các thuật toán băm phổ biến trong họ thuật toán băm SHA-2, được phát triển bởi Cơ quan Tiêu chuẩn và Công nghệ Hoa Kỳ (NIST).
 SHA-256 được sử dụng rộng rãi trong nhiều ứng dụng bảo mật như xác thực dữ liệu, chứng thực, chữ ký số, và bảo mật mật khẩu.
 Thuật toán SHA-256 như sau:
--    ![](https://hackmd.io/_uploads/SkxtCCrIn.png)
+-    ![image](https://github.com/trananhnhatviet/Hash_funtion/assets/92376163/f7e76928-39f6-4537-a013-a102e048e0e7)
 -    Chia thành 8 buffer, mỗi buffer là 32 bit
 -    Trong thuật toán SHA-256, Ch(e,f,g) và Maj(a,b,c) là các hàm logic được sử dụng để tính toán các giá trị trung gian trong quá trình băm
 -    Hàm Ch(e,f,g) được sử dụng để tính toán giá trị của ``e xor (f and (not g))``. Hàm Maj(a,b,c) được sử dụng để tính toán giá trị của ``(a and b) xor (a and c) xor (b and c)``.
