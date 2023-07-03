@@ -19,7 +19,7 @@ Thuật toán MD5 như sau:
 ![image](https://github.com/trananhnhatviet/Hash_funtion/assets/92376163/41388474-88ba-4a43-85df-80aa6936be13)
     -    Sau khi padding input M, ta sẽ chia ra thành 4 round, mỗi round 128 bits. Mỗi round sẽ xử lý 4 buffer.
     -    Giờ mình sẽ nói về round 1, các round khác cũng sẽ tương tự như thế.
-    ![image](https://github.com/trananhnhatviet/Hash_funtion/assets/92376163/fe31d298-0f8f-4c47-b39b-f05c4852aabd)
+    <img width="421" alt="image" src="https://github.com/trananhnhatviet/Hash_funtion/assets/92376163/84af79df-024d-4640-ba7d-1ba54a8724f1">
         -    Ta sẽ lấy 3 buffer B, C, D vào 1 hàm F, sau đó sẽ cộng module với A, sau đó cộng modulo tiếp với M[i] (i:1->16), và cộng tiếp với các hằng số MD5 K[i] (i:1->16), sau đó sẽ dịch trái s bit(s là mấy bit thì mình cũng không biết, wiki cũng không nói. Sau đó cộng modulo với B và sẽ trả về buffer B, ``D --> A``, ``B --> C``, ``C --> D``
         -    Các round sau thì cũng như thế, nhưng mà chỉ thay đổi hàm F thành các hàm G, H, I. Cụ thể như sau:
         -    ![image](https://github.com/trananhnhatviet/Hash_funtion/assets/92376163/2b659989-b87c-4857-bc1a-4964ba9ee16f)
