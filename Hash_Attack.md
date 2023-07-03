@@ -1,3 +1,4 @@
+# Hash Attack
 Có rất nhiều loại tấn công như Birthday Attack, Preimage attack, Collision attack,... thế nhưng nó đều là các loại bruteforce mà đã giới hạn phạm vi lại nên là mình chỉ tìm hiểu về ``Hash length extension attack`` thui nhaa
 
 Hash length extension attack là một loại tấn công nguy hiểm mà tấn công vào các thuật toán hash dựa trên việc mở rộng độ dài của một chuỗi đã biết và tính toán hash của chuỗi mới mà không cần biết giá trị gốc của chuỗi đầu vào ban đầu.
