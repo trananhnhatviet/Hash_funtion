@@ -1,4 +1,8 @@
 # PriMeD5
+
+<img width="1029" alt="image" src="https://github.com/trananhnhatviet/Hash_funtion/assets/92376163/d7201ec9-cca5-456f-bed5-1107049d78c7">
+
+
 Chall đưa ta source code như sau:
 ```
 from Crypto.PublicKey import RSA
