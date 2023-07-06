@@ -1,5 +1,7 @@
 # MD0
-![Alt text](image.png)
+
+<img width="1031" alt="image" src="https://github.com/trananhnhatviet/Hash_funtion/assets/92376163/987eac4c-27e1-4389-9068-defcfde71baf">
+
 
 Chall này có đưa ta 1 source code:
 ```
