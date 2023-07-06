@@ -1,5 +1,8 @@
 # Hash Stuffing
 
+<img width="1032" alt="image" src="https://github.com/trananhnhatviet/Hash_funtion/assets/92376163/fad0e05a-3b4d-4a10-b5b7-aa19f75bf6bd">
+
+
 Chall đưa ta source code như sau:
 
 ```# 2^128 collision protection!
