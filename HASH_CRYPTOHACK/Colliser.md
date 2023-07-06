@@ -1,5 +1,8 @@
 # COLLIDER
 
+<img width="1033" alt="image" src="https://github.com/trananhnhatviet/Hash_funtion/assets/92376163/2b34c869-2c0c-4a41-9834-afab843f4cda">
+
+
 Chall có đưa ta 1 source code như sau:
 ```
 import hashlib
