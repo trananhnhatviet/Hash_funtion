@@ -166,4 +166,4 @@ send = '{"option": "get_flag", "message": "61646d696e3d46616c7365313233340161646
 io.sendline(send.encode())
 io.interactive()
 ```
-Flag của chall này là: ***crypto{l3ngth_3xT3nd3r}***
+Flag của chall này là: **crypto{l3ngth_3xT3nd3r}**
