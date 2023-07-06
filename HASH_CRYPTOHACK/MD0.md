@@ -1,8 +1,5 @@
 # MD0
-
-
-<img width="868" alt="image" src="https://github.com/trananhnhatviet/Hash_funtion/assets/92376163/4df25e7d-b6ea-4375-8690-a329b7799077">
-
+![Alt text](image.png)
 
 Chall này có đưa ta 1 source code:
 ```
